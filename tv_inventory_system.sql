@@ -41,7 +41,7 @@ CREATE TABLE products (
     brand VARCHAR(50),
     model VARCHAR(50),
     price DECIMAL(10,2) NOT NULL,
-    deleted_atTIMESTAMP NULL DEFAULT NULL,
+    deleted_at TIMESTAMP NULL DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -124,4 +124,5 @@ INSERT INTO stock (product_id, quantity, min_quantity)
 VALUES 
 (1, 15, 5),
 (2, 8, 3),
+
 (3, 3, 1);
